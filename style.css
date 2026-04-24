@@ -1,143 +1,71 @@
-/* Imports */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Geral config */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-body, html {
-    height: 100vh;
-    width: 100dvw;
-    color: #fff;
-}
 body {
-    background-color: #000428;
+    font-family: system-ui, sans-serif;
 }
 
-/* Header config */
-header {
-    display: flex;
-    width: 100%;
-    padding: 2rem;
-    border-bottom: #fff 1px solid;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: #000428;
-}
-header, .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: max-content;
-}
-a {
-    color: inherit;
-}
-.navbar-brand {
-    font-size: 2rem;
-    font-weight: 500;
-}
-.navbar-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
-.navbar-items #navbar-item {
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
-}
-.navbar-items #navbar-item:hover {
-    transition: all 0.2s ease-in-out;
-    color: #7cb7ff;
-}
-.navbar-items #nav-github-button,
-.navbar-items #nav-contact-button {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #005ccd;
-    color: #fff;
-    padding: 0.5rem;
-    gap: 0.5rem;
-    transition: all 0.2s ease-in-out;
-}
-.navbar-items #nav-github-button:hover,
-.navbar-items #nav-contact-button:hover {
-    background-color: #0f7bff;
-    text-decoration: underline;
+.nav-link {
+    position: relative;
 }
 
-/* Main config */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+.nav-link:hover {
+    color: #ff6a00;
 }
-.profile-area {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    width: 95%;
-    border: #fff 1px solid;
+
+.btn-primary {
+    background   : #ff6a00;
+    padding      : 10px 20px;
+    border-radius: 8px;
+    transition   : 0.3s;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.card {
+    background   : #111;
+    padding      : 16px;
     border-radius: 10px;
-    padding: 1.5rem;
+    transition   : 0.3s;
 }
-.profile-area .profile-image {
-    width: 350px;
-    height: 350px;
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.input {
+    width        : 100%;
+    padding      : 10px;
+    border-radius: 6px;
+    background   : #111;
+    border       : 1px solid #333;
+}
+
+.btn-circle {
+    background   : #ff6a00;
+    width        : 45px;
+    height       : 45px;
     border-radius: 50%;
-    object-fit: cover;
-    padding: 0.5rem;
-    border: #fff 2px solid;
 }
-.profile-main h1,
-.profile-main p {
-    text-align: end;
-}
-@media (max-width: 1024px) {
-    .profile-area .profile-image {
-        width: 225px;
-        height: 225px;
-    }
-}
-@media (max-width: 768px) {
-    /* Header mobile media query */
-    header {
-        padding: 1rem;
-    }
-    header .navbar {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        gap: 1rem;
-    }
-    .navbar-items {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
 
+.btn-circle a {
+    color         : #fff;
+    display       : flex;
+    align-items   : center;
+    justify-content: center;
+}
 
-    .profile-area {
-        align-items: center;
-        text-align: center;
-    }
-    .profile-area .profile-image {
-        width: 150px;
-        height: 150px;
-    }
+.toast {
+    position     : fixed;
+    top          : -60px;
+    left         : 50%;
+    transform    : translateX(-50%);
+    background   : #ff6a00;
+    padding      : 10px 20px;
+    border-radius: 6px;
+    transition   : 0.5s;
+    z-index      : 9999;
+}
+
+.toast.show {
+    top: 20px;
 }

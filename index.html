@@ -1,50 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Augusto Gabriel | Designer Digital</title>
+    <meta name="description"
+        content="Portfólio de design digital focado em social media. Transforme sua marca com design estratégico.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Augusto Gabriel | Designer Digital">
+    <meta property="og:description" content="Design moderno para redes sociais e branding.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio | Augusto Gabriel</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <h1 class="navbar-brand">Augusto Gabriel</h1>
-            <div class="navbar-items">
-                <a id="navbar-item" href="#perfil">Perfil</a>
-                <a id="navbar-item" href="#habilidades">Habilidades</a>
-                <a id="navbar-item" href="#projetos">Projetos</a>
-                <a id="navbar-item" href="#formacoes">Formações</a>
-                <div class="nav-buttons">
-                    <a id="nav-github-button" href="https://github.com/Gutooo303">
-                        <i class="bi bi-github"></i>GitHub
-                    </a>
-                    <a id="nav-contact-button" href="#contato">
-                        <i class="bi bi-envelope"></i>Contato
-                    </a>
-                </div>
-            </div>
+
+<body class="bg-black text-white scroll-smooth">
+
+    <!-- HEADER -->
+    <header class="fixed w-full bg-black/80 backdrop-blur z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Augusto Gabriel</h1>
+            <ul class="flex gap-6">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <div id="perfil" class="profile-area">
-            <div class="profile-image">
-                <img src="./assets/profile.jpg" alt="Foto de perfil de Augusto Gabriel">
-            </div>
-            <div class="profile-main">
-                <h1>Olá, eu sou o Augusto Gabriel!</h1>
-                <p>Desenvolvedor Back-end.</p>
-                <div class="profile-info">
-                    <p><strong>Idade:</strong> 16 anos</p>
-                    <p><strong>Cidade:</strong> Praia Grande, São Paulo</p>
-                    <p><strong>Email:</strong> augusto.031109@gmail.com</p>
-                </div>
+
+    <!-- HERO -->
+    <section
+        class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-black via-gray-900 to-orange-600">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">
+            Design que converte
+        </h2>
+        <p class="mb-6 text-gray-300" data-aos="fade-up" data-aos-delay="200">
+            Social media, branding e identidade visual
+        </p>
+        <a href="#projetos" class="btn-primary" data-aos="fade-up" data-aos-delay="400">
+            Ver projetos
+        </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="max-w-6xl mx-auto p-8 grid md:grid-cols-2 gap-8">
+        <div data-aos="fade-right">
+            <h2 class="text-3xl font-bold mb-4">Sobre mim</h2>
+            <p>
+                Sou Augusto Gabriel, designer digital especializado em criação de conteúdo para redes sociais,
+                identidade visual e branding. Meu foco é transformar ideias em experiências visuais que geram
+                engajamento e resultados reais.
+            </p>
+        </div>
+
+        <div data-aos="fade-left">
+            <h3 class="text-xl mb-4">Habilidades</h3>
+            <ul class="space-y-2 text-gray-300">
+                <li>• Design para social media</li>
+                <li>• Branding</li>
+                <li>• Criação de posts</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="bg-gray-900 p-8">
+        <h2 class="text-3xl text-center mb-8">Projetos</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="card" data-aos="fade-up">
+                <img src="./images/Pixel Care 16 por 9.png" loading="lazy">
+                <h3>Pixel Care</h3>
             </div>
         </div>
-    </main>
-    <script src="script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="p-8 max-w-4xl mx-auto">
+        <h2 class="text-3xl text-center mb-6">Contato</h2>
+
+        <div class="text-center mb-6">
+            <a href="https://wa.me/5513991051754?text=Olá%2C%20Augusto!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20um%20projeto."
+                target="_blank" class="btn-primary">
+                WhatsApp
+            </a>
+            <p class="mt-4">
+                <a href="mailto:augusto.santos03030@gmail.com" class="text-orange-400">
+                    augusto.santos03030@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <form id="form" class="space-y-4">
+            <input type="text" id="nome" placeholder="Nome" required class="input">
+            <input type="email" id="email" placeholder="Email" required class="input">
+            <textarea id="mensagem" placeholder="Mensagem" required class="input"></textarea>
+
+            <button type="submit" class="btn-primary w-full">Fale comigo</button>
+        </form>
+    </section>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
