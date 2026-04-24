@@ -40,20 +40,6 @@ body {
     border       : 1px solid #333;
 }
 
-.btn-circle {
-    background   : #ff6a00;
-    width        : 45px;
-    height       : 45px;
-    border-radius: 50%;
-}
-
-.btn-circle a {
-    color         : #fff;
-    display       : flex;
-    align-items   : center;
-    justify-content: center;
-}
-
 .toast {
     position     : fixed;
     top          : -60px;
